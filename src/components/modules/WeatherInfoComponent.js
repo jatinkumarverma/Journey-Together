@@ -1,6 +1,6 @@
 import React from "react";
 import { WeatherIcons } from "../Weather";
-import { Navbar } from "@material-tailwind/react";
+// import { Navbar } from "@material-tailwind/react";
 
 const WeatherInfoIcons = {
   sunset: "/icons/temp.svg",

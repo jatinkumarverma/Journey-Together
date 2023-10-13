@@ -8,17 +8,12 @@ import Section from './Section';
 
 function LoginForm() {
   const [value,setValue] = useState('')
-  const handleClick = () => {
-    signInWithPopup(auth, provider)
-      .then((data) => {
-        const userEmail = data.user.email;
-        setValue(userEmail);
-        localStorage.setItem('email', userEmail);
-      })
-      .catch((error) => {
-        // Handle errors if needed
-        console.error('Error signing in:', error.message);
-      });
+  const handleClick=()=>{
+    signInWithPopup(auth,provider).then((data)=>{
+      setValue(data.user.email)
+      localStorage.setItem("email",data.user.email)
+
+    })
   }
   useEffect(() => {
     // Retrieve email from localStorage when the component mounts
@@ -28,7 +23,6 @@ function LoginForm() {
   return (
     <>
     {value?<Section/>:
-    
     <div className="relative h-screen bg-gray-100">
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-1/2 mx-auto sm:w-1/4">
@@ -36,9 +30,7 @@ function LoginForm() {
           <div className="text-center">
           <h1 className="text-4xl text-center my-8">Journey Together</h1>
             <img src={logo2} alt="logo" className="w-32 mx-auto mb-4" />
-         </div>
-         
-          <div>
+          </div>
           <Button
             
             ripple="light"
@@ -49,9 +41,6 @@ function LoginForm() {
           >
             Let's go...
           </Button>
-
-          </div>
-          
         </div>
       </div>
       <div className="absolute top-0 left-0 w-full h-full">

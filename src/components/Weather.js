@@ -50,7 +50,10 @@ function Weather() {
       {weather ? (
         <div>
           <WeatherComponent weather={weather} />
-          <Button onClick={handleBackClick}>Back</Button>
+          <div>
+          <Button  onClick={handleBackClick}>Back</Button>
+          </div>
+          
         </div>
       ) : (
         <CityComponent updateCity={updateCity} fetchWeather={fetchWeather} />

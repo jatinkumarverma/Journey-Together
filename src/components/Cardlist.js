@@ -11,7 +11,7 @@ function Cardlist() {
     <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-5 justify-items-center'>
       <div className='py-2'>
         <div className='rounded overflow-hidden shadow max-w-sm shadow-2xl'>
-          <img src={logo1} className='w-full container mx-auto'></img>
+          <img src={logo1} className='w-full container mx-auto' alt="card"></img>
           <div className='px-6'>
             <div className='font-bold text-xl mb-2 text-center'>Suggest route</div>
             <div className='grid grid-flow-col gap-5 pb-2 px-6 pt-4'>
@@ -28,7 +28,7 @@ function Cardlist() {
       </div>
       <div className='py-2'>
         <div className='rounded overflow-hidden shadow max-w-sm shadow-2xl'>
-          <img src={logo2} className='w-full container mx-auto'></img>
+          <img src={logo2} className='w-full container mx-auto' alt="card"></img>
           <div className='px-6'>
             <div className='font-bold text-xl mb-2 text-center'>Available Automobiles</div>
             <div className='grid grid-flow-col gap-5 pb-2 px-6 pt-4'>
@@ -45,7 +45,7 @@ function Cardlist() {
       </div>
       <div className='py-2'>
         <div className='rounded overflow-hidden shadow max-w-sm shadow-2xl'>
-          <img src={logo3} className='w-full container mx-auto'></img>
+          <img src={logo3} className='w-full container mx-auto'alt="card"></img>
           <div className='px-6'>
             <div className='font-bold text-xl mb-2 text-center'>Cost Friendly Hotels</div>
             <div className='grid grid-flow-col gap-5 pb-2 px-6 pt-4'>

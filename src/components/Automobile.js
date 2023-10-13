@@ -62,12 +62,12 @@ function Button1() {
     return (
       <div className="w-full max-w-sm mx-auto grid grid-cols-2 gap-2 items-center justify-center">
         <div className='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8'>
-            <img src={cab1} className="h-full w-full object-cover object-center group-hover:opacity-75"></img>
-        <Button ripple={true}><a href="https://book.olacabs.com/" target="_blank" >Ola</a></Button>
+            <img src={cab1} className="h-full w-full object-cover object-center group-hover:opacity-75" alt="ola"></img>
+        <Button ripple={true}><a href="https://book.olacabs.com/" target="https://www.olacabs.com/" >Ola</a></Button>
         </div>
         <div className='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8'>
-        <img src={cab2}></img>
-        <Button ripple={true}><a href="https://www.uber.com/in/en/" target="_blank" >Uber</a></Button>
+        <img src={cab2} alt="ola"></img>
+        <Button ripple={true}><a href="https://www.uber.com/in/en/" target="https://www.uber.com/" >Uber</a></Button>
         </div>
       </div>
     );

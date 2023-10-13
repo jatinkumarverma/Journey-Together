@@ -6,6 +6,7 @@ import logo3 from '../img/home3.jpg'
 import logo4 from '../img/home3.jpg'
 
 
+
 const products = [
     {
       id: 1,

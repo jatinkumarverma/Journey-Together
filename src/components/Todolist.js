@@ -95,7 +95,7 @@ function Todolist() {
         </div>
         
     </div>
-    <img src={logo4} className="w-full lg:w-2/5 container mx-auto flex items-center"></img>
+    <img src={logo4} className="w-full lg:w-2/5 container mx-auto flex items-center" alt='listman'></img>
     <div className='w-full fixed bottom-0'>
     <Bottom/>
     </div>
